@@ -21,3 +21,10 @@ output "ami_id" {
   value = data.aws_ami.joindevops.id
 }
 
+data "aws_instance" "mongodb" {
+    instance_id= "i-0ccbe0aa3bd2d6725"
+}
+
+output "mongo_info" {
+    value = data.aws_instance.mongodb.private_ip
+}
