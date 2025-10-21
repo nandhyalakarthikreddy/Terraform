@@ -42,3 +42,4 @@ terraform.rc
 # This file should be committed to ensure consistent provider versions across environments
 # It locks provider checksums and versions
 !.terraform.lock.hcl
+
