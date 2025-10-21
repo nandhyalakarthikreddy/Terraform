@@ -1,0 +1,44 @@
+# ==============================
+# Terraform .gitignore Template
+# ==============================
+
+# Local .terraform directories
+**/.terraform/*
+
+# Terraform state files
+*.tfstate
+*.tfstate.*
+
+# Crash logs
+crash.log
+crash.*.log
+
+# Backup files
+*.tfvars.backup
+*.backup
+
+# Sensitive variable files (never commit secrets)
+*.tfvars
+*.auto.tfvars
+
+# Terraform plan files
+*.tfplan
+
+# Override files (local custom changes)
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# CLI configuration files
+.terraformrc
+terraform.rc
+
+# ==============================
+# Lock Files
+# ==============================
+
+# DO NOT ignore .terraform.lock.hcl
+# This file should be committed to ensure consistent provider versions across environments
+# It locks provider checksums and versions
+!.terraform.lock.hcl
