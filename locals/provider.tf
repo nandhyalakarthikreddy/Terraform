@@ -7,13 +7,11 @@ terraform {
  }
 backend "s3" {
     bucket = "nkrdev.space"
-    key    = "remote-state-key"
+    key    = "locals-demo-key"
     region = "us-east-1"
     use_lockfile = true
     encrypt = true
   }
-
-
 }
 
 provider "aws" {
